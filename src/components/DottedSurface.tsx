@@ -8,19 +8,26 @@ type DottedSurfaceProps = Omit<React.ComponentProps<'div'>, 'ref'>;
 
 export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 	const { theme } = useTheme();
+	const [mounted, setMounted] = React.useState(false);
 
 	const containerRef = useRef<HTMLDivElement>(null);
 	const sceneRef = useRef<{
 		scene: THREE.Scene;
 		camera: THREE.PerspectiveCamera;
 		renderer: THREE.WebGLRenderer;
-		particles: THREE.Points[];
 		animationId: number;
 		count: number;
 	} | null>(null);
 
 	useEffect(() => {
-		if (!containerRef.current) return;
+		setMounted(true);
+	}, []);
+
+	useEffect(() => {
+		if (!mounted || !containerRef.current) return;
+
+		// Store container reference for cleanup
+		const container = containerRef.current;
 
 		const SEPARATION = 150;
 		const AMOUNTX = 40;
@@ -46,10 +53,9 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		renderer.setClearColor(scene.fog.color, 0);
 
-		containerRef.current.appendChild(renderer.domElement);
+		container.appendChild(renderer.domElement);
 
 		// Create particles
-		const particles: THREE.Points[] = [];
 		const positions: number[] = [];
 		const colors: number[] = [];
 
@@ -63,11 +69,8 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 				const z = iy * SEPARATION - (AMOUNTY * SEPARATION) / 2;
 
 				positions.push(x, y, z);
-				if (theme === 'dark') {
-					colors.push(200, 200, 200);
-				} else {
-					colors.push(0, 0, 0);
-				}
+				// Default to dark theme colors (white dots)
+				colors.push(200, 200, 200);
 			}
 		}
 
@@ -91,7 +94,7 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 		scene.add(points);
 
 		let count = 0;
-		let animationId: number;
+		let animationId: number = 0;
 
 		// Animation function
 		const animate = () => {
@@ -117,13 +120,8 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 			positionAttribute.needsUpdate = true;
 
 			// Update point sizes based on wave
-			const customMaterial = material as THREE.PointsMaterial & {
-				uniforms?: any;
-			};
-			if (!customMaterial.uniforms) {
-				// For dynamic size changes, we'd need a custom shader
-				// For now, keeping constant size for performance
-			}
+			// For dynamic size changes, we'd need a custom shader
+			// For now, keeping constant size for performance
 
 			renderer.render(scene, camera);
 			count += 0.1;
@@ -146,7 +144,6 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 			scene,
 			camera,
 			renderer,
-			particles: [points],
 			animationId,
 			count,
 		};
@@ -172,19 +169,22 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
 
 				sceneRef.current.renderer.dispose();
 
-				if (containerRef.current && sceneRef.current.renderer.domElement) {
-					containerRef.current.removeChild(
-						sceneRef.current.renderer.domElement,
-					);
+				// Use stored container reference for cleanup
+				if (container && sceneRef.current.renderer.domElement) {
+					container.removeChild(sceneRef.current.renderer.domElement);
 				}
 			}
 		};
-	}, [theme]);
+	}, [mounted, theme]);
+
+	if (!mounted) {
+		return null;
+	}
 
 	return (
 		<div
 			ref={containerRef}
-			className={cn('pointer-events-none fixed inset-0 -z-1', className)}
+			className={cn('pointer-events-none fixed inset-0 -z-10', className)}
 			{...props}
 		/>
 	);
