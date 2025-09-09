@@ -176,7 +176,7 @@ Submitted on: ${new Date().toLocaleString()}
   }
 
   return (
-    <div className="mb-12">
+    <div className="mb-12 relative z-10">
       <div className="bg-gradient-to-br from-slate-800/30 to-slate-900/30 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-4xl mx-auto">
         <h3 className="text-2xl font-bold text-white mb-2 text-center">Customize Your Template</h3>
         <p className="text-gray-300 mb-8 text-center">
