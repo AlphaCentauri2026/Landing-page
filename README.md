@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hamilton Web Design
 
-## Getting Started
+A modern, professional landing page for a website template library built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Clean, Minimal Design**: Modern grid-based layout with soft shadows and rounded corners
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Professional Components**: Header, Hero, Categories, Featured Templates, About, and Footer sections
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Performance Focused**: Built with Next.js for optimal performance
+- **Accessible**: Semantic HTML and proper ARIA attributes
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Font**: Geist Sans & Geist Mono (optimized by Next.js)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx           # Main landing page
+│   └── globals.css        # Global styles
+└── components/
+    ├── Header.tsx         # Navigation header
+    ├── Hero.tsx          # Hero section
+    ├── Categories.tsx    # Template categories grid
+    ├── FeaturedTemplates.tsx # Featured templates showcase
+    ├── About.tsx         # About section
+    ├── Footer.tsx        # Site footer
+    └── index.ts          # Component exports
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏃 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+3. **Open [http://localhost:3000](http://localhost:3000)** in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 Sections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Header
+- Logo placeholder on the left
+- Navigation links (Templates, Categories, About, Contact)
+- "Browse Templates" CTA button
+- Mobile-responsive hamburger menu
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Hero Section
+- Large headline: "Ready-to-Use Website Templates"
+- Descriptive subtext about the template library
+- "Get Started" primary CTA button
+- Hero image placeholder with modern gradient design
 
-## Deploy on Vercel
+### Categories Section
+- Grid of 4 template categories:
+  - Landing Pages
+  - Dashboards
+  - Ecommerce
+  - Portfolio
+- Each card includes icon, title, description, and "View Templates" link
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Featured Templates Section
+- Showcase of 3 featured templates with:
+  - Template preview placeholder
+  - Title and description
+  - "Preview Template" button
+  - "View All Templates" secondary CTA
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### About Section
+- Detailed description of the template library
+- Feature highlights (Fast Setup, Production Ready, Fully Responsive, Regular Updates)
+- Professional presentation of library benefits
+
+### Footer
+- Brand information and social media links
+- Quick navigation links
+- Legal links (Terms, Privacy, License)
+- Copyright notice with dynamic year
+
+## 🎨 Design System
+
+- **Colors**: Blue (#2563eb) as primary, Gray scale for text and backgrounds
+- **Typography**: Clean system fonts with optimized line heights
+- **Spacing**: Generous spacing with consistent padding/margins
+- **Shadows**: Soft shadows for depth and modern appearance
+- **Borders**: Rounded corners (8px-12px radius) throughout
+
+## 🔧 Customization
+
+### Adding New Templates
+Edit the `featuredTemplates` array in `src/components/FeaturedTemplates.tsx`
+
+### Modifying Categories
+Update the `categories` array in `src/components/Categories.tsx`
+
+### Changing Colors/Themes
+Modify Tailwind classes or update the design tokens in `globals.css`
+
+### Content Updates
+All text content is easily editable within each component file
+
+## 📦 Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+```bash
+npm run build
+# Deploy using Vercel CLI or connect to GitHub
+```
+
+### Other Platforms
+The built files in `out/` directory can be deployed to any static hosting service.
+
+## 📄 License
+
+This project is part of the Hamilton Web Design template library.
