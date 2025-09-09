@@ -13,7 +13,7 @@ export default function Contact() {
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Ready to launch your website? Have questions about our templates? 
-              We're here to help you succeed.
+              We&apos;re here to help you succeed.
             </p>
           </div>
 
@@ -207,7 +207,7 @@ export default function Contact() {
               </div>
               
               <div className="bg-gradient-to-br from-slate-800/30 to-slate-900/30 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                <h3 className="text-lg font-semibold text-white mb-3">What's included with each template?</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">What&apos;s included with each template?</h3>
                 <p className="text-gray-300">
                   Each template includes the complete source code, README documentation, LICENSE file, and all necessary assets organized in a clean file structure.
                 </p>

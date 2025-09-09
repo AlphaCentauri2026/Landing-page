@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const featuredTemplates = [
   {
@@ -94,9 +95,11 @@ export default function FeaturedTemplates() {
             >
               {/* Template Preview Image */}
               <div className="aspect-video bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-                <img
+                <Image
                   src={template.image}
                   alt={`${template.title} template preview`}
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover relative z-10"
                 />
                 <div className="fallback absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-800 -z-10">
