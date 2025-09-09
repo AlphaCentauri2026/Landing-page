@@ -150,7 +150,9 @@ export default function Pricing() {
         </div>
 
         {/* Customization Form */}
-        <CustomizationForm />
+        <section id="customization">
+          <CustomizationForm />
+        </section>
 
         {/* Contact Information */}
         <div className="text-center mb-12">
