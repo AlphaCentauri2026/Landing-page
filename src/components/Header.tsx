@@ -26,6 +26,12 @@ export default function Header() {
               Templates
             </Link>
             <Link
+              href="#pricing"
+              className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+            >
+              Pricing
+            </Link>
+            <Link
               href="/about"
               className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
             >
@@ -76,6 +82,13 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Browse Templates
+              </Link>
+              <Link
+                href="#pricing"
+                className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Pricing
               </Link>
               <Link
                 href="/about"
