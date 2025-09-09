@@ -218,7 +218,7 @@ Submitted on: ${new Date().toLocaleString()}
                 <div className="bg-gradient-to-br from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-white/10 peer-checked:border-purple-500 peer-checked:bg-purple-500/20 transition-all duration-300">
                   <div className="text-center">
                     <h4 className="text-lg font-semibold text-white">Template Bundle</h4>
-                    <p className="text-2xl font-bold text-purple-400">$995</p>
+                    <p className="text-2xl font-bold text-purple-400">$1,295</p>
                     <p className="text-sm text-gray-300">Five templates</p>
                   </div>
                 </div>
@@ -236,7 +236,7 @@ Submitted on: ${new Date().toLocaleString()}
                 <div className="bg-gradient-to-br from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-white/10 peer-checked:border-green-500 peer-checked:bg-green-500/20 transition-all duration-300">
                   <div className="text-center">
                     <h4 className="text-lg font-semibold text-white">Full Access Pass</h4>
-                    <p className="text-2xl font-bold text-green-400">$1,995</p>
+                    <p className="text-2xl font-bold text-green-400">$2,495+</p>
                     <p className="text-sm text-gray-300">All templates</p>
                   </div>
                 </div>

@@ -69,7 +69,7 @@ export default function Pricing() {
             <div className="text-center">
               <h3 className="text-2xl font-bold text-white mb-2">Template Bundle</h3>
               <div className="mb-6">
-                <span className="text-5xl font-bold text-white">$995</span>
+                <span className="text-5xl font-bold text-white">$1,295</span>
               </div>
               <ul className="space-y-4 text-gray-300 mb-8">
                 <li className="flex items-center">
@@ -111,7 +111,7 @@ export default function Pricing() {
             <div className="text-center">
               <h3 className="text-2xl font-bold text-white mb-2">Full Access Pass</h3>
               <div className="mb-6">
-                <span className="text-5xl font-bold text-white">$1,995</span>
+                <span className="text-5xl font-bold text-white">$2,495+</span>
               </div>
               <ul className="space-y-4 text-gray-300 mb-8">
                 <li className="flex items-center">
