@@ -197,6 +197,7 @@ export const Vortex = (props: VortexProps) => {
     canvas.style.width = `${innerWidth}px`;
     canvas.style.height = `${innerHeight}px`;
 
+    const ctx = canvas.getContext("2d");
     if (ctx) {
       ctx.scale(dpr, dpr);
     }
