@@ -1,0 +1,216 @@
+import { Header, Footer } from '@/components'
+
+export default function PricingPage() {
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        {/* Hero Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900">
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
+              Premium Website Templates
+            </h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Each template is fully prepped with README, LICENSE, assets, and organized file structure. 
+              Designed to save you weeks of development time.
+            </p>
+          </div>
+        </section>
+
+        {/* Pricing Cards */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Single Template */}
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 transform">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Single Template</h3>
+                  <div className="mb-6">
+                    <span className="text-5xl font-bold text-white">$395</span>
+                  </div>
+                  <ul className="space-y-4 text-gray-300 mb-8">
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      One fully prepped website template
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Includes README, LICENSE, and assets
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Commercial use license
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Organized file structure
+                    </li>
+                  </ul>
+                  <a
+                    href="tel:516-448-9417"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium shadow-lg hover:shadow-blue-500/25 inline-flex items-center justify-center"
+                  >
+                    Get Started Today
+                  </a>
+                </div>
+              </div>
+
+              {/* Template Bundle - Most Popular */}
+              <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-blue-500/50 hover:border-blue-400/70 transition-all duration-300 hover:scale-105 transform relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+                    Most Popular
+                  </span>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Template Bundle</h3>
+                  <div className="mb-6">
+                    <span className="text-5xl font-bold text-white">$1,295</span>
+                  </div>
+                  <ul className="space-y-4 text-gray-300 mb-8">
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      All 10 website templates
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Complete documentation
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Commercial use license
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Priority support
+                    </li>
+                  </ul>
+                  <a
+                    href="tel:516-448-9417"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium shadow-lg hover:shadow-blue-500/25 inline-flex items-center justify-center"
+                  >
+                    Get Started Today
+                  </a>
+                </div>
+              </div>
+
+              {/* Custom Package */}
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 transform">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Custom Package</h3>
+                  <div className="mb-6">
+                    <span className="text-5xl font-bold text-white">$2,495+</span>
+                  </div>
+                  <ul className="space-y-4 text-gray-300 mb-8">
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Custom template development
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Full customization
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Dedicated support
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Ongoing maintenance
+                    </li>
+                  </ul>
+                  <a
+                    href="tel:516-448-9417"
+                    className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-lg hover:from-green-700 hover:to-emerald-700 transition-all duration-300 font-medium shadow-lg hover:shadow-green-500/25 inline-flex items-center justify-center"
+                  >
+                    Get Started Today
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Terms & Conditions */}
+            <div className="bg-gradient-to-br from-slate-800/30 to-slate-900/30 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Terms & Conditions</h3>
+              <div className="space-y-4 text-gray-300">
+                <div>
+                  <h4 className="text-lg font-semibold text-white mb-2">License & Usage</h4>
+                  <p>All templates come with commercial use licenses. You can use them for client projects, personal projects, and commercial websites.</p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-white mb-2">Delivery</h4>
+                  <p>Templates are delivered immediately upon payment via email with download links and access to the complete source code.</p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-white mb-2">Support</h4>
+                  <p>Basic support is included with all packages. Priority support is available for bundle and custom packages.</p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-white mb-2">Updates</h4>
+                  <p>Template updates and improvements are provided as they become available. Major updates may require additional purchase.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Information */}
+            <div className="text-center mt-12">
+              <div className="bg-gradient-to-br from-slate-800/30 to-slate-900/30 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
+                <h3 className="text-2xl font-bold text-white mb-4">Ready to Get Started?</h3>
+                <p className="text-gray-300 mb-6">
+                  Contact me directly to discuss your template needs and get started with your project.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a
+                    href="tel:516-448-9417"
+                    className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-lg hover:from-green-700 hover:to-emerald-700 transition-all duration-300 font-medium shadow-lg hover:shadow-green-500/25 inline-flex items-center justify-center"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    Call (516) 448-9417
+                  </a>
+                  <a
+                    href="mailto:CoreyHamiltondev@gmail.com"
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium shadow-lg hover:shadow-blue-500/25 inline-flex items-center justify-center"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    Email CoreyHamiltondev@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
+}

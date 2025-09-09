@@ -26,12 +26,8 @@ export default function Header() {
               Templates
             </Link>
             <Link
-              href="#pricing"
+              href="/pricing"
               className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
-              }}
             >
               Pricing
             </Link>
@@ -88,13 +84,9 @@ export default function Header() {
                 Browse Templates
               </Link>
               <Link
-                href="#pricing"
+                href="/pricing"
                 className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200 font-medium"
-                onClick={(e) => {
-                  e.preventDefault()
-                  setIsMobileMenuOpen(false)
-                  document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
-                }}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Pricing
               </Link>
@@ -112,17 +104,20 @@ export default function Header() {
               >
                 Contact
               </Link>
+              <Link
+                href="/customization"
+                className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Customization
+              </Link>
               <div className="pt-2">
                 <Link
-                  href="#customization"
+                  href="/customization"
                   className="block px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-md hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium text-center"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    setIsMobileMenuOpen(false)
-                    document.getElementById('customization')?.scrollIntoView({ behavior: 'smooth' })
-                  }}
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Customization
+                  Get Custom Quote
                 </Link>
               </div>
             </div>
