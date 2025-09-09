@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
 
@@ -12,6 +12,7 @@ interface VortexProps {
   particleCount?: number;
   rangeY?: number;
   baseHue?: number;
+  rangeHue?: number;
   baseSpeed?: number;
   rangeSpeed?: number;
   baseRadius?: number;
@@ -54,7 +55,7 @@ export const Vortex = (props: VortexProps) => {
   const lerp = (n1: number, n2: number, speed: number): number =>
     (1 - speed) * n1 + speed * n2;
 
-  const setup = () => {
+  const setup = useCallback(() => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
     if (canvas && container) {
@@ -62,12 +63,12 @@ export const Vortex = (props: VortexProps) => {
 
       if (ctx) {
         console.log("Vortex: Setting up canvas", { width: canvas.width, height: canvas.height });
-        resize(canvas, ctx);
+        resize(canvas);
         initParticles();
         draw(canvas, ctx);
       }
     }
-  };
+  }, []);
 
   const initParticles = () => {
     tick = 0;
@@ -154,7 +155,7 @@ export const Vortex = (props: VortexProps) => {
     particleProps[i4] = vy;
     particleProps[i5] = life;
 
-    if (checkBounds(x, y, canvas) || life > ttl) {
+    if (checkBounds(x, y) || life > ttl) {
       initParticle(i);
     }
   };
@@ -183,12 +184,12 @@ export const Vortex = (props: VortexProps) => {
     ctx.restore();
   };
 
-  const checkBounds = (x: number, y: number, canvas: HTMLCanvasElement) => {
+  const checkBounds = (x: number, y: number) => {
     const { innerWidth, innerHeight } = window;
     return x > innerWidth || x < 0 || y > innerHeight || y < 0;
   };
 
-  const resize = (canvas: HTMLCanvasElement) => {
+  const resize = useCallback((canvas: HTMLCanvasElement) => {
     const { innerWidth, innerHeight } = window;
     const dpr = window.devicePixelRatio || 1;
 
@@ -204,7 +205,7 @@ export const Vortex = (props: VortexProps) => {
 
     center[0] = 0.5 * innerWidth;
     center[1] = 0.5 * innerHeight;
-  };
+  }, []);
 
   const renderGlow = (
     canvas: HTMLCanvasElement,
