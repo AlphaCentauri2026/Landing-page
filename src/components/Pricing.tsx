@@ -2,7 +2,7 @@ import CustomizationForm from './CustomizationForm'
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900 relative z-10">
+    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -150,7 +150,7 @@ export default function Pricing() {
         </div>
 
         {/* Customization Form */}
-        <section id="customization" className="relative z-10">
+        <section id="customization">
           <CustomizationForm />
         </section>
 

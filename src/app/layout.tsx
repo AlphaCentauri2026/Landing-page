@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Vortex } from "@/components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,21 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen`}
       >
-        <Vortex
-          className="min-h-screen"
-          particleCount={1000}
-          baseHue={220}
-          rangeHue={120}
-          baseSpeed={0.8}
-          rangeSpeed={1.2}
-          baseRadius={1.0}
-          rangeRadius={2.5}
-          backgroundColor="transparent"
-        >
-          {children}
-        </Vortex>
+        {children}
       </body>
     </html>
   );
