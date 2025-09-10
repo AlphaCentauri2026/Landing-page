@@ -5,14 +5,14 @@ const featuredTemplates = [
   {
     title: 'Plumbing Template',
     description: 'Professional plumbing services template with service listings, contact forms, and customer testimonials for local plumbing businesses.',
-    image: '/Template images/ABC plumbing images/Home.png',
+    image: '/Template images/ABC plumbing images/ Plumbing home.png',
     previewLink: 'https://abc-plumbing-8syb.vercel.app',
     category: 'Plumbing'
   },
   {
     title: 'Construction Template',
     description: 'Comprehensive construction company template featuring project galleries, service descriptions, and team showcase.',
-    image: '/Template images/All around construction images/Home.png',
+    image: '/Template images/All around construction images/Construction home .png',
     previewLink: 'https://all-around-construction.vercel.app',
     category: 'Construction'
   },
@@ -61,7 +61,7 @@ const featuredTemplates = [
   {
     title: 'Landscaping Template',
     description: 'Professional landscaping company template showcasing services, project portfolios, and seasonal offerings.',
-    image: '/Template images/Stoneway landscaping/Home.png',
+    image: '/Template images/Stoneway landscaping/Landscaping home.png',
     previewLink: 'https://stoneway-landscaping.vercel.app',
     category: 'Landscaping'
   },

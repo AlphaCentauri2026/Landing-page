@@ -7,7 +7,7 @@ const templates = [
     title: 'Plumbing Template',
     category: 'Plumbing',
     description: 'Professional plumbing services website with service listings, emergency contact, and customer testimonials.',
-    image: '/Template images/ABC plumbing images/Home.png',
+    image: '/Template images/ABC plumbing images/ Plumbing home.png',
     previewLink: 'https://abc-plumbing-8syb.vercel.app/',
     features: ['Service Pages', 'Emergency Contact', 'Customer Reviews', 'Service Areas'],
     price: '$395'
@@ -17,7 +17,7 @@ const templates = [
     title: 'Construction Template',
     category: 'Construction',
     description: 'Comprehensive construction company website featuring projects, equipment fleet, and team showcase.',
-    image: '/Template images/All around construction images/Home.png',
+    image: '/Template images/All around construction images/Construction home .png',
     previewLink: 'https://all-around-construction.vercel.app/',
     features: ['Project Gallery', 'Equipment Fleet', 'Team Profiles', 'Service Areas'],
     price: '$395'
@@ -87,7 +87,7 @@ const templates = [
     title: 'Landscaping Template',
     category: 'Landscaping',
     description: 'Professional landscaping company website showcasing projects, services, and customer testimonials.',
-    image: '/Template images/Stoneway landscaping/Home.png',
+    image: '/Template images/Stoneway landscaping/Landscaping home.png',
     previewLink: 'https://stoneway-landscaping.vercel.app/',
     features: ['Project Gallery', 'Service Listings', 'Customer Testimonials', 'Contact Forms'],
     price: '$395'
