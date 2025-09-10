@@ -3,74 +3,74 @@ import Image from 'next/image'
 
 const featuredTemplates = [
   {
-    title: 'ABC Plumbing',
+    title: 'Plumbing Template',
     description: 'Professional plumbing services template with service listings, contact forms, and customer testimonials for local plumbing businesses.',
     image: '/Template images/ABC plumbing images/Home.png',
     previewLink: 'https://abc-plumbing-8syb.vercel.app',
-    category: 'Service'
+    category: 'Plumbing'
   },
   {
-    title: 'All Around Construction',
+    title: 'Construction Template',
     description: 'Comprehensive construction company template featuring project galleries, service descriptions, and team showcase.',
     image: '/Template images/All around construction images/Home.png',
     previewLink: 'https://all-around-construction.vercel.app',
     category: 'Construction'
   },
   {
-    title: 'Auto Repair',
+    title: 'Auto Repair Template',
     description: 'Complete auto repair shop template with service pricing, appointment booking, and vehicle maintenance information.',
     image: '/Template images/Auto repair images/Home.png',
     previewLink: 'https://auto-repair-template.vercel.app',
     category: 'Automotive'
   },
   {
-    title: 'Dental Clinic',
+    title: 'Dental Clinic Template',
     description: 'Modern dental practice template with appointment scheduling, service listings, and professional healthcare design.',
     image: '/Template images/Dental clinic images/Home.png',
     previewLink: 'https://dental-clinic-delta-opal.vercel.app',
     category: 'Healthcare'
   },
   {
-    title: 'Fitness Studio',
+    title: 'Fitness Studio Template',
     description: 'Dynamic fitness center template with class schedules, trainer profiles, and membership signup functionality.',
     image: '/Template images/Fitness studio images/Home.png',
     previewLink: 'https://fitness-studio-six.vercel.app',
     category: 'Fitness'
   },
   {
-    title: 'Fresh Clean Cleaning Service',
+    title: 'Cleaning Service Template',
     description: 'Professional cleaning service template with service packages, booking system, and customer satisfaction features.',
     image: '/Template images/Fresh clean cleaning service images/ Fresh, clean homepage.png',
     previewLink: 'https://fresh-clean-services.vercel.app',
-    category: 'Service'
+    category: 'Cleaning'
   },
   {
-    title: 'Le Café',
+    title: 'Restaurant Template',
     description: 'Elegant café and restaurant template with menu display, reservations, and food photography showcase.',
     image: '/Template images/Le Café images/Home.png',
     previewLink: 'https://le-caf-nine.vercel.app',
     category: 'Restaurant'
   },
   {
-    title: 'Pet Clinic',
+    title: 'Veterinary Template',
     description: 'Comprehensive veterinary clinic template with service information, pet care tips, and appointment booking.',
     image: '/Template images/Pet clinic images/Home.png',
     previewLink: 'https://pet-clinic-seven.vercel.app',
-    category: 'Healthcare'
+    category: 'Veterinary'
   },
   {
-    title: 'Stoneway Landscaping',
+    title: 'Landscaping Template',
     description: 'Professional landscaping company template showcasing services, project portfolios, and seasonal offerings.',
     image: '/Template images/Stoneway landscaping/Home.png',
     previewLink: 'https://stoneway-landscaping.vercel.app',
     category: 'Landscaping'
   },
   {
-    title: 'Sweet Delites',
+    title: 'Bakery Template',
     description: 'Delightful bakery and dessert shop template with product catalog, custom orders, and visual menu display.',
     image: '/Template images/Sweet Delites images/Home.png',
     previewLink: 'https://bakery-shop-pi.vercel.app',
-    category: 'Food'
+    category: 'Bakery'
   }
 ]
 

@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const templates = [
   {
-    id: 'abc-plumbing',
-    title: 'ABC Plumbing',
-    category: 'Plumbing Services',
+    id: 'plumbing-template',
+    title: 'Plumbing Template',
+    category: 'Plumbing',
     description: 'Professional plumbing services website with service listings, emergency contact, and customer testimonials.',
     image: '/Template images/ABC plumbing images/Home.png',
     previewLink: 'https://abc-plumbing-8syb.vercel.app/',
@@ -13,8 +13,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'all-around-construction',
-    title: 'All Around Construction',
+    id: 'construction-template',
+    title: 'Construction Template',
     category: 'Construction',
     description: 'Comprehensive construction company website featuring projects, equipment fleet, and team showcase.',
     image: '/Template images/All around construction images/Home.png',
@@ -23,8 +23,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'auto-repair',
-    title: 'Auto Repair',
+    id: 'auto-repair-template',
+    title: 'Auto Repair Template',
     category: 'Automotive',
     description: 'Modern auto repair shop website with service pricing, customer reviews, and appointment booking.',
     image: '/Template images/Auto repair images/Home.png',
@@ -33,8 +33,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'dental-clinic',
-    title: 'Dental Clinic',
+    id: 'dental-clinic-template',
+    title: 'Dental Clinic Template',
     category: 'Healthcare',
     description: 'Professional dental practice website with services, staff profiles, and patient information.',
     image: '/Template images/Dental clinic images/Home.png',
@@ -43,8 +43,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'fitness-studio',
-    title: 'Fitness Studio',
+    id: 'fitness-studio-template',
+    title: 'Fitness Studio Template',
     category: 'Fitness',
     description: 'Dynamic fitness studio website with class schedules, trainer profiles, and membership options.',
     image: '/Template images/Fitness studio images/Home.png',
@@ -53,9 +53,9 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'fresh-clean',
-    title: 'Fresh Clean Cleaning Service',
-    category: 'Cleaning Services',
+    id: 'cleaning-service-template',
+    title: 'Cleaning Service Template',
+    category: 'Cleaning',
     description: 'Professional cleaning service website with booking system, service areas, and customer testimonials.',
     image: '/Template images/Fresh clean cleaning service images/ Fresh, clean homepage.png',
     previewLink: 'https://fresh-clean-services.vercel.app/',
@@ -63,8 +63,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'le-cafe',
-    title: 'Le Café',
+    id: 'restaurant-template',
+    title: 'Restaurant Template',
     category: 'Restaurant',
     description: 'Elegant restaurant website featuring menu, about us, and contact information.',
     image: '/Template images/Le Café images/Home.png',
@@ -73,8 +73,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'pet-clinic',
-    title: 'Pet Clinic',
+    id: 'veterinary-template',
+    title: 'Veterinary Template',
     category: 'Veterinary',
     description: 'Comprehensive veterinary clinic website with services, appointments, and care tips.',
     image: '/Template images/Pet clinic images/Home.png',
@@ -83,8 +83,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'stoneway-landscaping',
-    title: 'Stoneway Landscaping',
+    id: 'landscaping-template',
+    title: 'Landscaping Template',
     category: 'Landscaping',
     description: 'Professional landscaping company website showcasing projects, services, and customer testimonials.',
     image: '/Template images/Stoneway landscaping/Home.png',
@@ -93,8 +93,8 @@ const templates = [
     price: '$395'
   },
   {
-    id: 'sweet-delites',
-    title: 'Sweet Delites',
+    id: 'bakery-template',
+    title: 'Bakery Template',
     category: 'Bakery',
     description: 'Delicious bakery website with product showcase, ordering system, and promotions.',
     image: '/Template images/Sweet Delites images/Home.png',
@@ -104,7 +104,7 @@ const templates = [
   }
 ]
 
-const categories = ['All', 'Plumbing Services', 'Construction', 'Automotive', 'Healthcare', 'Fitness', 'Cleaning Services', 'Restaurant', 'Veterinary', 'Landscaping', 'Bakery']
+const categories = ['All', 'Plumbing', 'Construction', 'Automotive', 'Healthcare', 'Fitness', 'Cleaning', 'Restaurant', 'Veterinary', 'Landscaping', 'Bakery']
 
 export default function TemplatesPage() {
   return (
