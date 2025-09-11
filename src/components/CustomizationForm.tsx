@@ -207,36 +207,36 @@ Submitted on: ${new Date().toLocaleString()}
               </label>
               
               <label className="relative cursor-pointer">
-                <input 
-                  type="radio" 
-                  name="package" 
-                  value="bundle" 
-                  checked={formData.package === 'bundle'}
+                <input
+                  type="radio"
+                  name="package"
+                  value="two-templates"
+                  checked={formData.package === 'two-templates'}
                   onChange={handleInputChange}
-                  className="sr-only peer" 
+                  className="sr-only peer"
                 />
                 <div className="bg-gradient-to-br from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-white/10 peer-checked:border-purple-500 peer-checked:bg-purple-500/20 transition-all duration-300">
                   <div className="text-center">
-                    <h4 className="text-lg font-semibold text-white">Template Bundle</h4>
-                    <p className="text-2xl font-bold text-purple-400">$1,295</p>
-                    <p className="text-sm text-gray-300">Five templates</p>
+                    <h4 className="text-lg font-semibold text-white">Two Templates</h4>
+                    <p className="text-2xl font-bold text-purple-400">$695</p>
+                    <p className="text-sm text-gray-300">Full customization</p>
                   </div>
                 </div>
               </label>
               
               <label className="relative cursor-pointer">
-                <input 
-                  type="radio" 
-                  name="package" 
-                  value="full-access" 
-                  checked={formData.package === 'full-access'}
+                <input
+                  type="radio"
+                  name="package"
+                  value="ten-templates"
+                  checked={formData.package === 'ten-templates'}
                   onChange={handleInputChange}
-                  className="sr-only peer" 
+                  className="sr-only peer"
                 />
                 <div className="bg-gradient-to-br from-slate-700/50 to-slate-800/50 p-4 rounded-lg border border-white/10 peer-checked:border-green-500 peer-checked:bg-green-500/20 transition-all duration-300">
                   <div className="text-center">
-                    <h4 className="text-lg font-semibold text-white">Full Access Pass</h4>
-                    <p className="text-2xl font-bold text-green-400">$2,495+</p>
+                    <h4 className="text-lg font-semibold text-white">Ten Templates</h4>
+                    <p className="text-2xl font-bold text-green-400">$1,295</p>
                     <p className="text-sm text-gray-300">All templates</p>
                   </div>
                 </div>

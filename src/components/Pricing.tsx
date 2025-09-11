@@ -59,7 +59,7 @@ export default function Pricing() {
             </div>
           </div>
 
-          {/* Template Bundle */}
+          {/* Two Templates with Full Customization */}
           <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-blue-500/50 hover:border-blue-400/70 transition-all duration-300 hover:scale-105 transform relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold px-4 py-1 rounded-full">
@@ -67,16 +67,22 @@ export default function Pricing() {
               </span>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">Template Bundle</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Two Templates</h3>
               <div className="mb-6">
-                <span className="text-5xl font-bold text-white">$1,295</span>
+                <span className="text-5xl font-bold text-white">$695</span>
               </div>
               <ul className="space-y-4 text-gray-300 mb-8">
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Five templates of your choice
+                  Two templates of your choice
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Full customization included
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -90,12 +96,6 @@ export default function Pricing() {
                   </svg>
                   Priority support
                 </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Organized file structure
-                </li>
               </ul>
               <a
                 href="tel:516-448-9417"
@@ -106,19 +106,19 @@ export default function Pricing() {
             </div>
           </div>
 
-          {/* Full Access Pass */}
+          {/* Ten Template Bundle */}
           <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 transform">
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">Full Access Pass</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Ten Templates</h3>
               <div className="mb-6">
-                <span className="text-5xl font-bold text-white">$2,495+</span>
+                <span className="text-5xl font-bold text-white">$1,295</span>
               </div>
               <ul className="space-y-4 text-gray-300 mb-8">
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Unlimited access to all templates
+                  All 10 templates included
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">

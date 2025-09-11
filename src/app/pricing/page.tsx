@@ -64,7 +64,7 @@ export default function PricingPage() {
                 </div>
               </div>
 
-              {/* Template Bundle - Most Popular */}
+              {/* Two Templates with Full Customization - Most Popular */}
               <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-blue-500/50 hover:border-blue-400/70 transition-all duration-300 hover:scale-105 transform relative">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-medium">
@@ -72,22 +72,22 @@ export default function PricingPage() {
                   </span>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-2">Template Bundle</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">Two Templates</h3>
                   <div className="mb-6">
-                    <span className="text-5xl font-bold text-white">$1,295</span>
+                    <span className="text-5xl font-bold text-white">$695</span>
                   </div>
                   <ul className="space-y-4 text-gray-300 mb-8">
                     <li className="flex items-center">
                       <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      All 10 website templates
+                      Two templates of your choice
                     </li>
                     <li className="flex items-center">
                       <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      Complete documentation
+                      Full customization included
                     </li>
                     <li className="flex items-center">
                       <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -111,42 +111,42 @@ export default function PricingPage() {
                 </div>
               </div>
 
-              {/* Custom Package */}
+              {/* Ten Template Bundle */}
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 transform">
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-2">Custom Package</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">Ten Templates</h3>
                   <div className="mb-6">
-                    <span className="text-5xl font-bold text-white">$2,495+</span>
+                    <span className="text-5xl font-bold text-white">$1,295</span>
                   </div>
                   <ul className="space-y-4 text-gray-300 mb-8">
                     <li className="flex items-center">
                       <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      Custom template development
+                      All 10 templates included
                     </li>
                     <li className="flex items-center">
                       <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      Full customization
+                      Commercial use license
                     </li>
                     <li className="flex items-center">
                       <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      Dedicated support
+                      Priority support
                     </li>
                     <li className="flex items-center">
                       <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      Ongoing maintenance
+                      Early access to new templates
                     </li>
                   </ul>
                   <a
                     href="tel:516-448-9417"
-                    className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-lg hover:from-green-700 hover:to-emerald-700 transition-all duration-300 font-medium shadow-lg hover:shadow-green-500/25 inline-flex items-center justify-center"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-medium shadow-lg hover:shadow-blue-500/25 inline-flex items-center justify-center"
                   >
                     Get Started Today
                   </a>
